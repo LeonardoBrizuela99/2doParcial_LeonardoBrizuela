@@ -1,0 +1,96 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(516,5): warning MSB8004: El directorio Intermediate no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Intermediate.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(517,5): warning MSB8004: El directorio Output no termina con una barra diagonal final. Esta instancia de compilación agregará la barra diagonal porque es necesaria para que se pueda evaluar correctamente el directorio Output.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: El directorio intermedio (C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\obj\Win32\Debug\) contiene archivos compartidos de otro proyecto (GraphicsEngine.vcxproj). Esto puede dar lugar a un comportamiento incorrecto de limpieza y recompilación.
+  Game.cpp
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\renderer.h(42,12): warning C4251: 'Renderer::projection': struct 'glm::mat<4,4,glm::f32,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Renderer'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(36,78):
+  vea la declaración de 'glm::mat<4,4,glm::f32,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\renderer.h(43,12): warning C4251: 'Renderer::view': struct 'glm::mat<4,4,glm::f32,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Renderer'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(36,78):
+  vea la declaración de 'glm::mat<4,4,glm::f32,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\renderer.h(44,12): warning C4251: 'Renderer::cameraPos': struct 'glm::vec<3,float,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Renderer'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(35,66):
+  vea la declaración de 'glm::vec<3,float,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\renderer.h(45,12): warning C4251: 'Renderer::cameraFront': struct 'glm::vec<3,float,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Renderer'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(35,66):
+  vea la declaración de 'glm::vec<3,float,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\renderer.h(46,12): warning C4251: 'Renderer::cameraUp': struct 'glm::vec<3,float,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Renderer'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(35,66):
+  vea la declaración de 'glm::vec<3,float,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(15,12): warning C4251: 'Entity::model': struct 'glm::mat<4,4,glm::f32,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(36,78):
+  vea la declaración de 'glm::mat<4,4,glm::f32,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(16,12): warning C4251: 'Entity::translate': struct 'glm::mat<4,4,glm::f32,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(36,78):
+  vea la declaración de 'glm::mat<4,4,glm::f32,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(17,12): warning C4251: 'Entity::rotateX': struct 'glm::mat<4,4,glm::f32,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(36,78):
+  vea la declaración de 'glm::mat<4,4,glm::f32,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(18,12): warning C4251: 'Entity::rotateY': struct 'glm::mat<4,4,glm::f32,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(36,78):
+  vea la declaración de 'glm::mat<4,4,glm::f32,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(19,12): warning C4251: 'Entity::rotateZ': struct 'glm::mat<4,4,glm::f32,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(36,78):
+  vea la declaración de 'glm::mat<4,4,glm::f32,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(20,12): warning C4251: 'Entity::scale': struct 'glm::mat<4,4,glm::f32,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(36,78):
+  vea la declaración de 'glm::mat<4,4,glm::f32,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(22,12): warning C4251: 'Entity::position': struct 'glm::vec<3,float,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(35,66):
+  vea la declaración de 'glm::vec<3,float,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(23,12): warning C4251: 'Entity::rotation': struct 'glm::vec<3,float,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(35,66):
+  vea la declaración de 'glm::vec<3,float,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(24,12): warning C4251: 'Entity::localScale': struct 'glm::vec<3,float,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(35,66):
+  vea la declaración de 'glm::vec<3,float,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Entity.h(26,12): warning C4251: 'Entity::lastPosition': struct 'glm::vec<3,float,glm::packed_highp>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Entity'
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\libs\glm\glm\detail\qualifier.hpp(35,66):
+  vea la declaración de 'glm::vec<3,float,glm::packed_highp>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Animation.h(16,21): warning C4251: 'Animation::myFrames': class 'std::vector<Frame,std::allocator<Frame>>' necesita tener una interfaz DLL para que la utilicen los clientes de class 'Animation'
+  (compilando archivo de origen "Game.cpp")
+  C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Tools\MSVC\14.39.33519\include\vector(436,7):
+  vea la declaración de 'std::vector<Frame,std::allocator<Frame>>'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Keycode.h(21,1): warning C4005: 'KEYCODE_H': redefinición de macro
+  (compilando archivo de origen "Game.cpp")
+  C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\GraphicsEngine\Keycode.h(2,1):
+  vea la definición anterior de 'KEYCODE_H'
+  
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\Game\Game.cpp(41,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\Game\Game.cpp(44,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\Game\Game.cpp(47,53): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\Game\Game.cpp(50,52): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\Game\Game.cpp(53,57): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\Game\Game.cpp(69,22): warning C4305: '+=': truncamiento de 'double' a 'float'
+  Game.vcxproj -> C:\Users\Aula 1\Desktop\Desarrollo_1_Engine1\bin\Win32\Debug\Game.exe
