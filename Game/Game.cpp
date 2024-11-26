@@ -17,7 +17,7 @@ void Game::Play()
 
 enum State
 {
-	Sleft, Sright, Sup, Sdown, Sspin,Srock
+	Sleft, Sright, Sup, Sdown, Sspin, Srock
 };
 
 State knucklesState = Sdown;
@@ -35,6 +35,7 @@ void Game::Start()
 
 	rock.canCollision = true;
 	knuckles.canCollision = true;
+
 	rock.weight = 1;
 	knuckles.strength = 2;
 
@@ -47,18 +48,14 @@ void Game::Start()
 	rightAnim = new Animation();
 	rightAnim->AddFrame(0, 388, 35, 40, 646, 473, 0.001, 2);
 
-	/*leftAnim = new Animation();
-	leftAnim->AddFrame(0, 118, 161, 118, 646, 473, 0.001, 10);*/
-
 	spinAnim = new Animation();
 	spinAnim->AddFrame(229, 302, 32, 40, 646, 473, 0.001, 4);
+
 	moveRockAnim = new Animation();
 	moveRockAnim->AddFrame(425, 341, 35, 35, 646, 473, 0.001, 4);
 
-	
 	rock.SetAnimation(rockFrame);
 	knuckles.SetAnimation(idleKnuckles);
-
 }
 
 float rotation = 1.0f;
@@ -88,11 +85,13 @@ void Game::Update()
 	{
 		knucklesState = Sright;
 		knuckles.SetAnimation(rightAnim);
-		knuckles.SetPosition(knuckles.GetPositionX() + 0.00005f, knuckles.GetPositionY(), knuckles.GetPositionZ());
+		knuckles.Scale(1.0f, 1.0f, 1.0f);
+		knuckles.SetPosition(knuckles.GetPositionX() + 0.0001f, knuckles.GetPositionY(), knuckles.GetPositionZ());
 	}
 	else if (knucklesState == Sright)
 	{
 		knuckles.SetAnimation(idleKnuckles);
+		knuckles.Scale(1.0f, 1.0f, 1.0f);
 	}
 
 	if (GetKey(KEYCODE_W))
@@ -108,13 +107,16 @@ void Game::Update()
 	if (GetKey(KEYCODE_A))
 	{
 		knucklesState = Sleft;
-		knuckles.SetAnimation(leftAnim);
-		knuckles.SetPosition(knuckles.GetPositionX() - 0.01f, knuckles.GetPositionY(), knuckles.GetPositionZ());
+		knuckles.SetAnimation(rightAnim); // Usar la animación de derecha
+		knuckles.Scale(-1.0f, 1.0f, 1.0f); // Invertir imagen para izquierda
+		knuckles.SetPosition(knuckles.GetPositionX() - 0.0001f, knuckles.GetPositionY(), knuckles.GetPositionZ());
 	}
 	else if (knucklesState == Sleft)
 	{
 		knuckles.SetAnimation(idleKnuckles);
+		knuckles.Scale(-1.0f, 1.0f, 1.0f); // Invertir imagen para izquierda
 	}
+
 
 	if (GetKey(KEYCODE_Q))
 	{
@@ -122,7 +124,7 @@ void Game::Update()
 		knuckles.SetAnimation(spinAnim);
 		knuckles.SetPosition(knuckles.GetPositionX(), knuckles.GetPositionY(), knuckles.GetPositionZ());
 	}
-	else if (knucklesState==Sspin)
+	else if (knucklesState == Sspin)
 	{
 		knuckles.SetAnimation(idleKnuckles);
 	}
@@ -141,17 +143,17 @@ void Game::Update()
 	//rock.SetPosition(rockX, 0.0f, -1.0f);
 
 	/* Detección de colisiones*/
-    if (knuckles.CheckCollisionAABB(rock))
+	if (knuckles.CheckCollisionAABB(rock))
 	{
 		knuckles.SetAnimation(moveRockAnim);
-	
+
 		rock.SetAnimation(rockFrame);
 	}
-	else if (knucklesState==Srock)
+	else if (knucklesState == Srock)
 	{
 		knuckles.SetAnimation(idleKnuckles);
 	}
-	
+
 
 	knuckles.CheckCollisionAABB(rock);
 	rock.Update();
