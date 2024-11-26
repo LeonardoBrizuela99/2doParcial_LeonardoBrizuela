@@ -8,23 +8,23 @@
 class Game : public BaseGame
 {
 private:
-    Sprite knuckles;
-    Sprite rock;
+	Sprite knuckles;
+	Sprite rock;
 
-    void Update();
-    bool Input(int keycode, float& variable, float modif);
-    void Start();
-    void Delete();
+	void Update();
+	bool Input(int keycode, float& variable, float modif);
+	void Start();
+	void Delete();
 
-    Animation* leftAnim;
-    Animation* rightAnim;
-    Animation* spinAnim;
-    Animation* collisionAnim;
-    Animation* idleKnuckles;
-
+	Animation* leftAnim;
+	Animation* rightAnim;
+	Animation* spinAnim;
+	Animation* moveRockAnim;
+	Animation* idleKnuckles;
+	Animation* rockFrame;
 public:
-    Game();
-    void Play();
+	Game();
+	void Play();
 };
 
 #endif 
